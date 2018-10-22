@@ -1,0 +1,7 @@
+Class Variables: These are variables that are declared with static keyword and are the same for all objects of the Class. They can be accessed without creating an instance of the class.
+
+Instance Variables: These are variables that are defined without the ststic keyword and each object of the class has its own copy of the variable.They can only be accessed when an instance of the class is created.
+
+Local Variables: These are variables that are created in a method and can only be accessed in that method.
+
+Parameters: This a refrence to a variable that will be passed into the method when that method is called.
