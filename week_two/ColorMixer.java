@@ -12,14 +12,15 @@ public class ColorMixer{
         String colorTwo = scan.nextLine().toLowerCase();
         if (colorOne == colorTwo){
             System.out.println("Resultant secondary color: " + colorOne);
-        }else if ((colorOne == "red" | colorOne == "blue") && (colorTwo == "blue" | colorTwo == "red")){
+        }else if ((colorOne.equals("red") | colorOne.equals("blue")) && (colorTwo.equals("blue") | colorTwo.equals("red"))){
             System.out.println("Resultant secondary color: purple");
-        }else if ((colorOne == "red" | colorOne == "yellow") && (colorTwo == "yellow" | colorTwo == "red")){
+        }else if ((colorOne.equals("red") | colorOne.equals("yellow")) && (colorTwo.equals("yellow") | colorTwo.equals("red"))){
             System.out.println("Resultant secondary color: yellow");
-        }else if ((colorOne == "blue" | colorOne == "yellow") && (colorTwo == "yellow" | colorTwo == "blue")){
+        }else if ((colorOne.equals("blue") | colorOne.equals("yellow")) && (colorTwo.equals("yellow") | colorTwo.equals("blue"))){
             System.out.println("Resultant secondary color: green");
         }else{
             System.out.println("Invalid primary color detected");
         }
+        scan.close();
     }
 }
