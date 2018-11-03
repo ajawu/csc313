@@ -26,7 +26,7 @@ public class RomanNumerals{
             break;
             case 7: romanNumerals = "VII";
             break;
-            case 8: romanNumerals = "VII";
+            case 8: romanNumerals = "VIII";
             break;
             case 9: romanNumerals = "IX";
             break;
