@@ -47,7 +47,7 @@ public class LectureFiveAndSix {
         String response = scan.nextLine().toLowerCase();
 
         if (response.equalsIgnoreCase("g")){
-            SwingArithmetics calculator = new SwingArithmetics();
+            BurgerRegistration calculator = new BurgerRegistration();
             calculator.setVisible(true);
         }else{
            System.out.println("Exiting now"); 
