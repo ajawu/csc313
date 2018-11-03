@@ -5,6 +5,8 @@
  */
 package lecturefiveandsix;
 import javax.swing.JFrame;
+import java.io.*;
+import java.util.*;
 
 /**
  *
@@ -16,9 +18,40 @@ public class LectureFiveAndSix {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        SwingArithmetics calculator = new SwingArithmetics();
-        calculator.setVisible(true);
+        // TODO code application logic here       
+//        Exercise 3 Lecture 5 - writing to files
+        final Formatter format;
+        try{
+            format = new Formatter("c:\\code\\javaLecture.txt");
+            BufferedWriter bw = new BufferedWriter(new FileWriter("c:\\code\\javaLecture.txt"));
+            bw.write("I love CSC 313");
+            bw.newLine();
+            bw.write("I hope you do too");
+            bw.close();
+        }catch(Exception e){
+            System.out.println("Write error occured");
+        }
+        
+        try { 
+            BufferedReader br = new BufferedReader(new FileReader("C:\\code\\javaLecture.txt"));        
+            String sCurrentLine;
+            while ((sCurrentLine = br.readLine()) != null) {
+            System.out.println(sCurrentLine);}
+             br.close();
+         }catch (Exception e) {
+            System.out.println("Read error occured");
+         }
+        
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the letter g to move on to gui exercises: ");
+        String response = scan.nextLine().toLowerCase();
+
+        if (response.equalsIgnoreCase("g")){
+            SwingArithmetics calculator = new SwingArithmetics();
+            calculator.setVisible(true);
+        }else{
+           System.out.println("Exiting now"); 
+        }
     }
     
 }
