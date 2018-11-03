@@ -23,13 +23,161 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="56" max="32767" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="340" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="transmissionCheck" max="32767" attributes="0"/>
+                          <Component id="radiatorCheck" max="32767" attributes="0"/>
+                          <Component id="oilCheck" max="32767" attributes="0"/>
+                          <Component id="lubeCheck" alignment="1" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="inspectionCheck" min="-2" max="-2" attributes="0"/>
+                          <Component id="mufflerCheck" min="-2" max="-2" attributes="0"/>
+                          <Component id="tireCheck" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="totalButton" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" pref="78" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="totalField" min="-2" pref="189" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="167" max="-2" attributes="0"/>
+              <Component id="nextButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="36" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="oilCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="inspectionCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lubeCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="mufflerCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="radiatorCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tireCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="transmissionCheck" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <Component id="totalButton" min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel2" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                  <Component id="totalField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="nextButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="12" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Choose one or more services"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="oilCheck">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Oil Change (N26.00)"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="lubeCheck">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Lube job (N18.00)"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="radiatorCheck">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Radiator Flush(N30.00)"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="transmissionCheck">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Transmission Flush (N80.00)"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="inspectionCheck">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Inspection(N15.00)"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="mufflerCheck">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Muffler Replacement(N100.00)"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="tireCheck">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tire rotation(N20.00)"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="totalButton">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="20" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Calculate Total"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="totalButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Total Charge:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="totalField">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="totalFieldActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="nextButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Next Exercise"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nextButtonActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
 </Form>

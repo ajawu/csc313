@@ -27,21 +27,169 @@ public class JoeAutomotive extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        oilCheck = new javax.swing.JCheckBox();
+        lubeCheck = new javax.swing.JCheckBox();
+        radiatorCheck = new javax.swing.JCheckBox();
+        transmissionCheck = new javax.swing.JCheckBox();
+        inspectionCheck = new javax.swing.JCheckBox();
+        mufflerCheck = new javax.swing.JCheckBox();
+        tireCheck = new javax.swing.JCheckBox();
+        totalButton = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        totalField = new javax.swing.JTextField();
+        nextButton = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel1.setText("Choose one or more services");
+
+        oilCheck.setText("Oil Change (N26.00)");
+
+        lubeCheck.setText("Lube job (N18.00)");
+
+        radiatorCheck.setText("Radiator Flush(N30.00)");
+
+        transmissionCheck.setText("Transmission Flush (N80.00)");
+
+        inspectionCheck.setText("Inspection(N15.00)");
+
+        mufflerCheck.setText("Muffler Replacement(N100.00)");
+
+        tireCheck.setText("Tire rotation(N20.00)");
+
+        totalButton.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        totalButton.setText("Calculate Total");
+        totalButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                totalButtonActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setText("Total Charge:");
+
+        totalField.setEditable(false);
+        totalField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                totalFieldActionPerformed(evt);
+            }
+        });
+
+        nextButton.setText("Next Exercise");
+        nextButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nextButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(56, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(87, 87, 87))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(transmissionCheck, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(radiatorCheck, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(oilCheck, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lubeCheck, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(inspectionCheck)
+                            .addComponent(mufflerCheck)
+                            .addComponent(tireCheck)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(totalButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(46, 46, 46)))
+                .addGap(25, 25, 25))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(82, 82, 82)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(totalField, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(56, 56, 56))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(167, 167, 167)
+                .addComponent(nextButton)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(oilCheck)
+                    .addComponent(inspectionCheck))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lubeCheck)
+                    .addComponent(mufflerCheck))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(radiatorCheck)
+                    .addComponent(tireCheck))
+                .addGap(18, 18, 18)
+                .addComponent(transmissionCheck)
+                .addGap(28, 28, 28)
+                .addComponent(totalButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(totalField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(nextButton)
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void totalFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_totalFieldActionPerformed
+
+    private void totalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalButtonActionPerformed
+        // TODO add your handling code here:
+        int total = 0;
+        if (oilCheck.isSelected()){
+            total += 26;
+        }
+        if (lubeCheck.isSelected()){
+            total += 18;
+        }
+        if (radiatorCheck.isSelected()){
+            total += 30;
+        }
+        if (transmissionCheck.isSelected()){
+            total += 80;
+        }
+        if (inspectionCheck.isSelected()){
+            total += 15;
+        }
+        if (mufflerCheck.isSelected()){
+            total += 100;
+        }
+        if (tireCheck.isSelected()){
+            total += 20;
+        }
+        totalField.setText("=N= " + total);
+    }//GEN-LAST:event_totalButtonActionPerformed
+
+    private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        new LongDistance().setVisible(true);
+    }//GEN-LAST:event_nextButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +227,17 @@ public class JoeAutomotive extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBox inspectionCheck;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JCheckBox lubeCheck;
+    private javax.swing.JCheckBox mufflerCheck;
+    private javax.swing.JButton nextButton;
+    private javax.swing.JCheckBox oilCheck;
+    private javax.swing.JCheckBox radiatorCheck;
+    private javax.swing.JCheckBox tireCheck;
+    private javax.swing.JButton totalButton;
+    private javax.swing.JTextField totalField;
+    private javax.swing.JCheckBox transmissionCheck;
     // End of variables declaration//GEN-END:variables
 }
